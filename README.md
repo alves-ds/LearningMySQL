@@ -10,3 +10,9 @@
 ## Comando para apagar um banco de dados
  Para apagarmos um banco de dados, basta utilizarmos o comando: <br>
  `drop database meubanco`
+
+ ## Criar um banco de dados com especificações
+ Podemos também criar um banco de dados com especificações relacionadas aos tipos de caracteres que serão utilizados, especificando por exemplo que ele aceite caracteres específicos da língua latina, que envolve pontuações, fazendo as seguintes especificações no momento de criação do banco de dados: <br>
+ `create database cadastro
+default character set utf8
+default collate utf8_general_ci;`
