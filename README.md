@@ -13,6 +13,19 @@
 
  ## Criar um banco de dados com especificações
  Podemos também criar um banco de dados com especificações relacionadas aos tipos de caracteres que serão utilizados, especificando por exemplo que ele aceite caracteres específicos da língua latina, que envolve pontuações, fazendo as seguintes especificações no momento de criação do banco de dados: <br>
- `create database cadastro
-default character set utf8
+ `create database cadastro <br>
+default character set utf8 <br>
 default collate utf8_general_ci;`
+
+## Criar uma tabela com espeficiações quanto ao tipo de variáveis
+Para criar uma tabela no nosso banco de dados, especificando as variáveis que serão inseridas nesta tabela e seu respectivo tipo, utilizamos o seguinte comando: <br>
+`create table `pessoas` (
+`id` int not null auto_increment,
+`nome` varchar(30) not null,
+`nascimento` date,
+`sexo` enum('M', 'F'),
+`peso` decimal(5,2),
+`altura` decimal(3,2),
+`nacionalidade` varchar(20) default 'Brasil',
+primary key(id)
+) default charset = utf8;` 
