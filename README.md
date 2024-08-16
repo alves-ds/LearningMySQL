@@ -19,7 +19,7 @@ default collate utf8_general_ci;`
 
 ## Criar uma tabela com espeficiações quanto ao tipo de variáveis
 Para criar uma tabela no nosso banco de dados, especificando as variáveis que serão inseridas nesta tabela e seu respectivo tipo, utilizamos o seguinte comando: <br>
-`create table `pessoas` ( <br>
+create table `pessoas` ( <br>
 `id` int not null auto_increment, <br>
 `nome` varchar(30) not null, <br>
 `nascimento` date, <br>
@@ -28,4 +28,4 @@ Para criar uma tabela no nosso banco de dados, especificando as variáveis que s
 `altura` decimal(3,2), <br>
 `nacionalidade` varchar(20) default 'Brasil', <br>
 primary key(id) <br>
-) default charset = utf8;` 
+) default charset = utf8;
