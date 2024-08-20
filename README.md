@@ -19,13 +19,21 @@ default collate utf8_general_ci;`
 
 ## Criar uma tabela com espeficiações quanto ao tipo de variáveis
 Para criar uma tabela no nosso banco de dados, especificando as variáveis que serão inseridas nesta tabela e seu respectivo tipo, utilizamos o seguinte comando: <br>
-create table `pessoas` ( <br>
-`id` int not null auto_increment, <br>
-`nome` varchar(30) not null, <br>
-`nascimento` date, <br>
-`sexo` enum('M', 'F'), <br>
-`peso` decimal(5,2), <br>
-`altura` decimal(3,2), <br>
-`nacionalidade` varchar(20) default 'Brasil', <br>
+`create table pessoas ( <br>
+id int not null auto_increment, <br>
+nome varchar(30) not null, <br>
+nascimento date, <br>
+sexo enum('M', 'F'), <br>
+peso decimal(5,2), <br>
+altura decimal(3,2), <br>
+nacionalidade varchar(20) default 'Brasil', <br>
 primary key(id) <br>
-) default charset = utf8;
+) default charset = utf8;`
+
+## Inserir dados na tabela
+Para inserir dados novos na nossa tabela, basta utilizarmos o seguinte comando: <br>
+`insert into pessoas <br>
+(nome, nascimento, sexo, peso, altura, nacionalidade) <br>
+values <br>
+('Godofredo', '1984-01-02', 'M', '78.5', '1.83', 'Brasil');`
+Perceba que como criamos a nossa tabela indicando que o id teria um incremento automático, não precisamos informá-lo. 
