@@ -37,3 +37,13 @@ Para inserir dados novos na nossa tabela, basta utilizarmos o seguinte comando: 
 `values` <br>
 `('Godofredo', '1984-01-02', 'M', '78.5', '1.83', 'Brasil');` <br>
 Perceba que como criamos a nossa tabela indicando que o id teria um incremento automático, não precisamos informá-lo. 
+
+## Inserir vários dados de uma só vez
+Para inserir mais de um registro de uma só vez, podemos utilizar o seguinte comando: <br>
+`insert into pessoas` <br>
+`(nome, nascimento, sexo, peso, altura, nacionalidade)` <br>
+`values` <br>
+`('Ana', '1975-12-22', 'F', '52.3', '1.45', 'EUA'),` <br>
+`('Pedro', '2000-07-15', 'M', '52.3', '1.45', 'Brasil'),` <br>
+`('Maria', '1999-05-30', 'F', '75.9', '1.70', 'Portugal');` <br>
+Basta separarmos cada registro por vírgula. 
